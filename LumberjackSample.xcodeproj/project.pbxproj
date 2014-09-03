@@ -1,453 +1,1012 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		C771CEA219B6AC2C0097F25B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C771CEA119B6AC2C0097F25B /* Foundation.framework */; };
-		C771CEA419B6AC2C0097F25B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C771CEA319B6AC2C0097F25B /* CoreGraphics.framework */; };
-		C771CEA619B6AC2C0097F25B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C771CEA519B6AC2C0097F25B /* UIKit.framework */; };
-		C771CEAC19B6AC2C0097F25B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C771CEAA19B6AC2C0097F25B /* InfoPlist.strings */; };
-		C771CEAE19B6AC2C0097F25B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C771CEAD19B6AC2C0097F25B /* main.m */; };
-		C771CEB219B6AC2C0097F25B /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C771CEB119B6AC2C0097F25B /* TTAppDelegate.m */; };
-		C771CEB419B6AC2C0097F25B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C771CEB319B6AC2C0097F25B /* Images.xcassets */; };
-		C771CEBB19B6AC2C0097F25B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C771CEBA19B6AC2C0097F25B /* XCTest.framework */; };
-		C771CEBC19B6AC2C0097F25B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C771CEA119B6AC2C0097F25B /* Foundation.framework */; };
-		C771CEBD19B6AC2C0097F25B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C771CEA519B6AC2C0097F25B /* UIKit.framework */; };
-		C771CEC519B6AC2C0097F25B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C771CEC319B6AC2C0097F25B /* InfoPlist.strings */; };
-		C771CEC719B6AC2C0097F25B /* LumberjackSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C771CEC619B6AC2C0097F25B /* LumberjackSampleTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C771CEBE19B6AC2C0097F25B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C771CE9619B6AC2C0097F25B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C771CE9D19B6AC2C0097F25B;
-			remoteInfo = LumberjackSample;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		C771CE9E19B6AC2C0097F25B /* LumberjackSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LumberjackSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C771CEA119B6AC2C0097F25B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C771CEA319B6AC2C0097F25B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C771CEA519B6AC2C0097F25B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C771CEA919B6AC2C0097F25B /* LumberjackSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LumberjackSample-Info.plist"; sourceTree = "<group>"; };
-		C771CEAB19B6AC2C0097F25B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C771CEAD19B6AC2C0097F25B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C771CEAF19B6AC2C0097F25B /* LumberjackSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LumberjackSample-Prefix.pch"; sourceTree = "<group>"; };
-		C771CEB019B6AC2C0097F25B /* TTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAppDelegate.h; sourceTree = "<group>"; };
-		C771CEB119B6AC2C0097F25B /* TTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
-		C771CEB319B6AC2C0097F25B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C771CEB919B6AC2C0097F25B /* LumberjackSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LumberjackSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C771CEBA19B6AC2C0097F25B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C771CEC219B6AC2C0097F25B /* LumberjackSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LumberjackSampleTests-Info.plist"; sourceTree = "<group>"; };
-		C771CEC419B6AC2C0097F25B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C771CEC619B6AC2C0097F25B /* LumberjackSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LumberjackSampleTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C771CE9B19B6AC2C0097F25B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C771CEA419B6AC2C0097F25B /* CoreGraphics.framework in Frameworks */,
-				C771CEA619B6AC2C0097F25B /* UIKit.framework in Frameworks */,
-				C771CEA219B6AC2C0097F25B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C771CEB619B6AC2C0097F25B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C771CEBB19B6AC2C0097F25B /* XCTest.framework in Frameworks */,
-				C771CEBD19B6AC2C0097F25B /* UIKit.framework in Frameworks */,
-				C771CEBC19B6AC2C0097F25B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		C771CE9519B6AC2C0097F25B = {
-			isa = PBXGroup;
-			children = (
-				C771CEA719B6AC2C0097F25B /* LumberjackSample */,
-				C771CEC019B6AC2C0097F25B /* LumberjackSampleTests */,
-				C771CEA019B6AC2C0097F25B /* Frameworks */,
-				C771CE9F19B6AC2C0097F25B /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		C771CE9F19B6AC2C0097F25B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C771CE9E19B6AC2C0097F25B /* LumberjackSample.app */,
-				C771CEB919B6AC2C0097F25B /* LumberjackSampleTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C771CEA019B6AC2C0097F25B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C771CEA119B6AC2C0097F25B /* Foundation.framework */,
-				C771CEA319B6AC2C0097F25B /* CoreGraphics.framework */,
-				C771CEA519B6AC2C0097F25B /* UIKit.framework */,
-				C771CEBA19B6AC2C0097F25B /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C771CEA719B6AC2C0097F25B /* LumberjackSample */ = {
-			isa = PBXGroup;
-			children = (
-				C771CEB019B6AC2C0097F25B /* TTAppDelegate.h */,
-				C771CEB119B6AC2C0097F25B /* TTAppDelegate.m */,
-				C771CEB319B6AC2C0097F25B /* Images.xcassets */,
-				C771CEA819B6AC2C0097F25B /* Supporting Files */,
-			);
-			path = LumberjackSample;
-			sourceTree = "<group>";
-		};
-		C771CEA819B6AC2C0097F25B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C771CEA919B6AC2C0097F25B /* LumberjackSample-Info.plist */,
-				C771CEAA19B6AC2C0097F25B /* InfoPlist.strings */,
-				C771CEAD19B6AC2C0097F25B /* main.m */,
-				C771CEAF19B6AC2C0097F25B /* LumberjackSample-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C771CEC019B6AC2C0097F25B /* LumberjackSampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				C771CEC619B6AC2C0097F25B /* LumberjackSampleTests.m */,
-				C771CEC119B6AC2C0097F25B /* Supporting Files */,
-			);
-			path = LumberjackSampleTests;
-			sourceTree = "<group>";
-		};
-		C771CEC119B6AC2C0097F25B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C771CEC219B6AC2C0097F25B /* LumberjackSampleTests-Info.plist */,
-				C771CEC319B6AC2C0097F25B /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		C771CE9D19B6AC2C0097F25B /* LumberjackSample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C771CECA19B6AC2C0097F25B /* Build configuration list for PBXNativeTarget "LumberjackSample" */;
-			buildPhases = (
-				C771CE9A19B6AC2C0097F25B /* Sources */,
-				C771CE9B19B6AC2C0097F25B /* Frameworks */,
-				C771CE9C19B6AC2C0097F25B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LumberjackSample;
-			productName = LumberjackSample;
-			productReference = C771CE9E19B6AC2C0097F25B /* LumberjackSample.app */;
-			productType = "com.apple.product-type.application";
-		};
-		C771CEB819B6AC2C0097F25B /* LumberjackSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C771CECD19B6AC2C0097F25B /* Build configuration list for PBXNativeTarget "LumberjackSampleTests" */;
-			buildPhases = (
-				C771CEB519B6AC2C0097F25B /* Sources */,
-				C771CEB619B6AC2C0097F25B /* Frameworks */,
-				C771CEB719B6AC2C0097F25B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C771CEBF19B6AC2C0097F25B /* PBXTargetDependency */,
-			);
-			name = LumberjackSampleTests;
-			productName = LumberjackSampleTests;
-			productReference = C771CEB919B6AC2C0097F25B /* LumberjackSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		C771CE9619B6AC2C0097F25B /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = TT;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Accuvally Inc";
-				TargetAttributes = {
-					C771CEB819B6AC2C0097F25B = {
-						TestTargetID = C771CE9D19B6AC2C0097F25B;
-					};
-				};
-			};
-			buildConfigurationList = C771CE9919B6AC2C0097F25B /* Build configuration list for PBXProject "LumberjackSample" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = C771CE9519B6AC2C0097F25B;
-			productRefGroup = C771CE9F19B6AC2C0097F25B /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				C771CE9D19B6AC2C0097F25B /* LumberjackSample */,
-				C771CEB819B6AC2C0097F25B /* LumberjackSampleTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		C771CE9C19B6AC2C0097F25B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C771CEAC19B6AC2C0097F25B /* InfoPlist.strings in Resources */,
-				C771CEB419B6AC2C0097F25B /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C771CEB719B6AC2C0097F25B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C771CEC519B6AC2C0097F25B /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		C771CE9A19B6AC2C0097F25B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C771CEB219B6AC2C0097F25B /* TTAppDelegate.m in Sources */,
-				C771CEAE19B6AC2C0097F25B /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C771CEB519B6AC2C0097F25B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C771CEC719B6AC2C0097F25B /* LumberjackSampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C771CEBF19B6AC2C0097F25B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C771CE9D19B6AC2C0097F25B /* LumberjackSample */;
-			targetProxy = C771CEBE19B6AC2C0097F25B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C771CEAA19B6AC2C0097F25B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C771CEAB19B6AC2C0097F25B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C771CEC319B6AC2C0097F25B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C771CEC419B6AC2C0097F25B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		C771CEC819B6AC2C0097F25B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		C771CEC919B6AC2C0097F25B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C771CECB19B6AC2C0097F25B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LumberjackSample/LumberjackSample-Prefix.pch";
-				INFOPLIST_FILE = "LumberjackSample/LumberjackSample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		C771CECC19B6AC2C0097F25B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LumberjackSample/LumberjackSample-Prefix.pch";
-				INFOPLIST_FILE = "LumberjackSample/LumberjackSample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		C771CECE19B6AC2C0097F25B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LumberjackSample.app/LumberjackSample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LumberjackSample/LumberjackSample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "LumberjackSampleTests/LumberjackSampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		C771CECF19B6AC2C0097F25B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LumberjackSample.app/LumberjackSample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LumberjackSample/LumberjackSample-Prefix.pch";
-				INFOPLIST_FILE = "LumberjackSampleTests/LumberjackSampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		C771CE9919B6AC2C0097F25B /* Build configuration list for PBXProject "LumberjackSample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C771CEC819B6AC2C0097F25B /* Debug */,
-				C771CEC919B6AC2C0097F25B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C771CECA19B6AC2C0097F25B /* Build configuration list for PBXNativeTarget "LumberjackSample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C771CECB19B6AC2C0097F25B /* Debug */,
-				C771CECC19B6AC2C0097F25B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C771CECD19B6AC2C0097F25B /* Build configuration list for PBXNativeTarget "LumberjackSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C771CECE19B6AC2C0097F25B /* Debug */,
-				C771CECF19B6AC2C0097F25B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = C771CE9619B6AC2C0097F25B /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1C01A2B4BF6E4188BC5C4788</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-LumberjackSample-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>34E9F658DAD7426296E6DEE3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>5DD3A0E3FD1448D4B7EBB7BE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-LumberjackSample.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-LumberjackSample.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CE9519B6AC2C0097F25B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C771CEA719B6AC2C0097F25B</string>
+				<string>C771CEC019B6AC2C0097F25B</string>
+				<string>C771CEA019B6AC2C0097F25B</string>
+				<string>C771CE9F19B6AC2C0097F25B</string>
+				<string>5DD3A0E3FD1448D4B7EBB7BE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CE9619B6AC2C0097F25B</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>TT</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Accuvally Inc</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>C771CEB819B6AC2C0097F25B</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>C771CE9D19B6AC2C0097F25B</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>C771CE9919B6AC2C0097F25B</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>C771CE9519B6AC2C0097F25B</string>
+			<key>productRefGroup</key>
+			<string>C771CE9F19B6AC2C0097F25B</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>C771CE9D19B6AC2C0097F25B</string>
+				<string>C771CEB819B6AC2C0097F25B</string>
+			</array>
+		</dict>
+		<key>C771CE9919B6AC2C0097F25B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C771CEC819B6AC2C0097F25B</string>
+				<string>C771CEC919B6AC2C0097F25B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C771CE9A19B6AC2C0097F25B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C771CEB219B6AC2C0097F25B</string>
+				<string>C771CEAE19B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C771CE9B19B6AC2C0097F25B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C771CEA419B6AC2C0097F25B</string>
+				<string>C771CEA619B6AC2C0097F25B</string>
+				<string>C771CEA219B6AC2C0097F25B</string>
+				<string>C7DCA750B5944CFD817954A6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C771CE9C19B6AC2C0097F25B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C771CEAC19B6AC2C0097F25B</string>
+				<string>C771CEB419B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C771CE9D19B6AC2C0097F25B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C771CECA19B6AC2C0097F25B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>34E9F658DAD7426296E6DEE3</string>
+				<string>C771CE9A19B6AC2C0097F25B</string>
+				<string>C771CE9B19B6AC2C0097F25B</string>
+				<string>C771CE9C19B6AC2C0097F25B</string>
+				<string>1C01A2B4BF6E4188BC5C4788</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>LumberjackSample</string>
+			<key>productName</key>
+			<string>LumberjackSample</string>
+			<key>productReference</key>
+			<string>C771CE9E19B6AC2C0097F25B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>C771CE9E19B6AC2C0097F25B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>LumberjackSample.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C771CE9F19B6AC2C0097F25B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C771CE9E19B6AC2C0097F25B</string>
+				<string>C771CEB919B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEA019B6AC2C0097F25B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C771CEA119B6AC2C0097F25B</string>
+				<string>C771CEA319B6AC2C0097F25B</string>
+				<string>C771CEA519B6AC2C0097F25B</string>
+				<string>C771CEBA19B6AC2C0097F25B</string>
+				<string>DC7179B7AE5A445E95B1AFF1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEA119B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C771CEA219B6AC2C0097F25B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C771CEA119B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C771CEA319B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C771CEA419B6AC2C0097F25B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C771CEA319B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C771CEA519B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C771CEA619B6AC2C0097F25B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C771CEA519B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C771CEA719B6AC2C0097F25B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C771CEB019B6AC2C0097F25B</string>
+				<string>C771CEB119B6AC2C0097F25B</string>
+				<string>C771CEB319B6AC2C0097F25B</string>
+				<string>C771CEA819B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>LumberjackSample</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEA819B6AC2C0097F25B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C771CEA919B6AC2C0097F25B</string>
+				<string>C771CEAA19B6AC2C0097F25B</string>
+				<string>C771CEAD19B6AC2C0097F25B</string>
+				<string>C771CEAF19B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEA919B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>LumberjackSample-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEAA19B6AC2C0097F25B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C771CEAB19B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEAB19B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEAC19B6AC2C0097F25B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C771CEAA19B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C771CEAD19B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEAE19B6AC2C0097F25B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C771CEAD19B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C771CEAF19B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LumberjackSample-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEB019B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TTAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEB119B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TTAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEB219B6AC2C0097F25B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C771CEB119B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C771CEB319B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEB419B6AC2C0097F25B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C771CEB319B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C771CEB519B6AC2C0097F25B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C771CEC719B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C771CEB619B6AC2C0097F25B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C771CEBB19B6AC2C0097F25B</string>
+				<string>C771CEBD19B6AC2C0097F25B</string>
+				<string>C771CEBC19B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C771CEB719B6AC2C0097F25B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C771CEC519B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C771CEB819B6AC2C0097F25B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C771CECD19B6AC2C0097F25B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C771CEB519B6AC2C0097F25B</string>
+				<string>C771CEB619B6AC2C0097F25B</string>
+				<string>C771CEB719B6AC2C0097F25B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C771CEBF19B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>LumberjackSampleTests</string>
+			<key>productName</key>
+			<string>LumberjackSampleTests</string>
+			<key>productReference</key>
+			<string>C771CEB919B6AC2C0097F25B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>C771CEB919B6AC2C0097F25B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>LumberjackSampleTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C771CEBA19B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>C771CEBB19B6AC2C0097F25B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C771CEBA19B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C771CEBC19B6AC2C0097F25B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C771CEA119B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C771CEBD19B6AC2C0097F25B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C771CEA519B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C771CEBE19B6AC2C0097F25B</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>C771CE9619B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C771CE9D19B6AC2C0097F25B</string>
+			<key>remoteInfo</key>
+			<string>LumberjackSample</string>
+		</dict>
+		<key>C771CEBF19B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>C771CE9D19B6AC2C0097F25B</string>
+			<key>targetProxy</key>
+			<string>C771CEBE19B6AC2C0097F25B</string>
+		</dict>
+		<key>C771CEC019B6AC2C0097F25B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C771CEC619B6AC2C0097F25B</string>
+				<string>C771CEC119B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>LumberjackSampleTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEC119B6AC2C0097F25B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C771CEC219B6AC2C0097F25B</string>
+				<string>C771CEC319B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEC219B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>LumberjackSampleTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEC319B6AC2C0097F25B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C771CEC419B6AC2C0097F25B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEC419B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEC519B6AC2C0097F25B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C771CEC319B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C771CEC619B6AC2C0097F25B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LumberjackSampleTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C771CEC719B6AC2C0097F25B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C771CEC619B6AC2C0097F25B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C771CEC819B6AC2C0097F25B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C771CEC919B6AC2C0097F25B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C771CECA19B6AC2C0097F25B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C771CECB19B6AC2C0097F25B</string>
+				<string>C771CECC19B6AC2C0097F25B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C771CECB19B6AC2C0097F25B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>5DD3A0E3FD1448D4B7EBB7BE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>LumberjackSample/LumberjackSample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LumberjackSample/LumberjackSample-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C771CECC19B6AC2C0097F25B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>5DD3A0E3FD1448D4B7EBB7BE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>LumberjackSample/LumberjackSample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LumberjackSample/LumberjackSample-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C771CECD19B6AC2C0097F25B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C771CECE19B6AC2C0097F25B</string>
+				<string>C771CECF19B6AC2C0097F25B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C771CECE19B6AC2C0097F25B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/LumberjackSample.app/LumberjackSample</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>LumberjackSample/LumberjackSample-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>LumberjackSampleTests/LumberjackSampleTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C771CECF19B6AC2C0097F25B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/LumberjackSample.app/LumberjackSample</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>LumberjackSample/LumberjackSample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>LumberjackSampleTests/LumberjackSampleTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C7DCA750B5944CFD817954A6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DC7179B7AE5A445E95B1AFF1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DC7179B7AE5A445E95B1AFF1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-LumberjackSample.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>C771CE9619B6AC2C0097F25B</string>
+</dict>
+</plist>
