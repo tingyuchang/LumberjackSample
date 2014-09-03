@@ -9,10 +9,23 @@
 #import "TTAppDelegate.h"
 #import "TTViewController.h"
 
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
 @implementation TTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
+    DDFileLogger *fileLogger = [DDFileLogger new];
+    fileLogger.rollingFrequency = 86400; // 60 * 60 * 24
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7; // save log for 7 days
+    [DDLog addLogger:fileLogger];
+    
+    DDLogVerbose(@"Start launch app");
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     TTViewController *viewController = [TTViewController new];
     self.window.rootViewController = viewController;

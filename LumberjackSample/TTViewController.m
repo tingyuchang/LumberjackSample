@@ -8,42 +8,57 @@
 
 #import "TTViewController.h"
 
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
 @interface TTViewController ()
+
+- (NSArray*)getLogPath; // used to show all logs filepath
 
 @end
 
 @implementation TTViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        DDLogVerbose(@"TTViewController init");
     }
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
+    
+    DDLogVerbose(@"TTViewController viewdidload");
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    for (NSString *filePath in [self getLogPath]) {
+        NSString * fileContents = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+        NSLog(@"%@", fileContents);
+    }
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+#pragma mark - private
 
-/*
-#pragma mark - Navigation
+- (NSArray*)getLogPath {
+    
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    
+    NSString * logPath = [docPath stringByAppendingPathComponent:@"Caches"];
+    logPath = [logPath stringByAppendingPathComponent:@"Logs"];
+    
+    NSFileManager * fileManger = [NSFileManager defaultManager];
+    NSError * error = nil;
+    NSArray * fileList = [[NSArray alloc]init];
+    fileList = [fileManger contentsOfDirectoryAtPath:logPath error:&error];
+    NSMutableArray * listArray = [[NSMutableArray alloc]init];
+    
+    for (NSString * oneLogPath in fileList) {
+        NSString * truePath = [logPath stringByAppendingPathComponent:oneLogPath];
+        [listArray addObject:truePath];
+    }
+    
+    return listArray;
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
 
 @end
